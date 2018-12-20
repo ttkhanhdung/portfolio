@@ -27,20 +27,21 @@ h1 {
 .hvr-fly-right {
   display: block;
 }
-
+/*
 #bio-img {
-    position: absolute;
-    z-index: 1;
-    width: 30%;
-    height: 30%;
-}
-
+  position: absolute;
+  z-index: 1;
+  width: 30%;
+  height: 30%;
+}*/
 
 .stack-image-right {
   position: absolute;
   width: 10%;
   left: 0%;
   mix-blend-mode: overlay;
+  transition: transform 0.3s ease-in-out;
+  z-index: -1;
 }
 
 .stack-image-left {
@@ -48,6 +49,8 @@ h1 {
   width: 10%;
   left: 0%;
   mix-blend-mode: overlay;
+  transition: transform 0.3s ease-in-out;
+  z-index: -1;
 }
 
 #img2 {
@@ -136,18 +139,16 @@ h1 {
   position: relative;
 }
 h1 {
-  font-family:'roboto-bold.ttf', sans-serif;
+  font-family: "roboto-bold.ttf", sans-serif;
   font-weight: bold;
 }
 
 p {
-  font-family: 'roboto-light.ttf', sans-serif;
+  font-family: "roboto-light.ttf", sans-serif;
   font-weight: lighter;
 }
-
-
+/*
 @keyframes hvr-fly-right-in {
-
   25% {
     transform: translate(10%, -10%);
   }
@@ -166,7 +167,6 @@ p {
 }
 
 @keyframes hvr-fly-left-in {
-
   25% {
     transform: translate(-10%, 10%);
   }
@@ -182,7 +182,6 @@ p {
   100% {
     transform: translate(-60%, 60%);
   }
-
 }
 
 @keyframes hvr-fly-left-out {
@@ -199,7 +198,7 @@ p {
   }
 
   10% {
-    transform: translate(0%,0%)
+    transform: translate(0%, 0%);
   }
 }
 
@@ -226,3 +225,4 @@ p {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+*/
