@@ -185,7 +185,7 @@ p {
 
 }
 
-@keyframes hvr-fly-left-out {
+/* @keyframes hvr-fly-left-out {
   80% {
     transform: translate(-40%, 40%);
   }
@@ -198,10 +198,10 @@ p {
     transform: translate(-10%, 10%);
   }
 
-  10% {
+  0% {
     transform: translate(0%,0%)
   }
-}
+} */
 
 .hvr-fly-right:hover .stack-image-right {
   animation-name: hvr-fly-right-in;
@@ -211,18 +211,32 @@ p {
   animation-fill-mode: forwards;
 }
 
-.hvr-fly-left .stack-image-left {
+.hvr-fly-right .stack-image-right {
+  /* animation-direction: alternate-reverse; */
+  animation-fill-mode: backwards;
+}
+/* .hvr-fly-left .stack-image-left {
   animation-name: hvr-fly-left-in;
   animation-duration: 0.3s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
   animation-fill-mode: reverse;
-}
+} */
 
 .hvr-fly-left:hover .stack-image-left {
-  animation-name: hvr-fly-left-out;
+  animation-name: hvr-fly-left-in;
   animation-duration: 0.3s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+
+.bio {
+  position: relative;
+  width: 50%;
+}
+
+.bio h1, p {
+  position: relative;
+  left: 20%;
 }
