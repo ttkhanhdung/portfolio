@@ -1,7 +1,8 @@
-body {
+body, div, img {
   padding: 0;
   margin: 0;
 }
+
 
 @font-face {
   font-family: roboto-bold;
@@ -15,228 +16,196 @@ body {
   font-weight: lighter;
 }
 
-h1 {
-  font-family: cursive;
-}
 
 .bio-image {
-  position: relative;
-  display: inline-block;
-}
-
-.hvr-fly-right {
+  position: absolute;
   display: block;
+  top: 10%;
+  left: 10%;
+  width: 25%;
 }
 
 #bio-img {
-    position: absolute;
-    z-index: 1;
-    width: 30%;
-    height: 30%;
-}
-
-
-.stack-image-right {
-  position: absolute;
-  width: 10%;
-  left: 0%;
-  mix-blend-mode: overlay;
-}
-
-.stack-image-left {
-  position: absolute;
-  width: 10%;
-  left: 0%;
-  mix-blend-mode: overlay;
+  /* position: relative; */
+  z-index: 1;
 }
 
 #img2 {
   position: absolute;
-  left: 1%;
-  top: 18%;
+  width: 30%;
+  top: 25%;
+  left: -1%;
 }
 
 #img3 {
   position: absolute;
-  left: 2%;
-  top: 30%;
+  width: 30%;
+  top: 71.5%;
+  left: -2%;
 }
 
 #img4 {
   position: absolute;
-  left: 1%;
-  top: 72%;
+  left: 8%;
+  top: 15%;
+  width: 30%;
 }
 
 #img5 {
+  width: 30%;
   position: absolute;
-  left: 20%;
-  top: 30%;
+  left: 70%;
+  top: 4%;
 }
 
 #img6 {
   position: absolute;
-  left: 20%;
-  top: 58%;
+  left: 70%;
+  top: 12%;
+  width: 30%;
 }
 
 #img7 {
+  width: 30%;
   position: absolute;
-  left: 1%;
-  top: 37%;
+  left: 3%;
+  top: 65%;
 }
 
 #img8 {
   position: absolute;
-  left: 17%;
-  top: 59%;
+  width: 30%;
+  top: 60%;
+  left: 70%;
 }
 
 #img9 {
   position: absolute;
-  left: 18%;
-  top: 37%;
+  width: 30%;
+  right: 5%;
+  top: 50%;
 }
 
 #img10 {
   position: absolute;
-  left: 2%;
-  top: 68%;
+  width: 30%;
+  top: 70%;
+  left: 63%;
 }
 
 #img11 {
   position: absolute;
-  left: 23%;
-  top: 55%;
-  width: 3%;
+  width: 5%;
+  top: 46%;
+  right: 15%;
 }
 
 #img12 {
   position: absolute;
-  left: 20%;
-  top: 50%;
-  width: 5%;
+  width: 8%;
+  top: 45%;
+  right: 10%;
 }
 
 #img13 {
   position: absolute;
-  left: 3%;
-  top: 57%;
-  width: 3%;
+  width: 14%;
+  top: 50%;
+  left: 7%;
 }
 
 #img14 {
   position: absolute;
-  left: 2%;
-  top: 56%;
-  width: 2%;
+  width: 9%;
+  left: 15%;
+  top: 55%;
 }
 
 .bio {
-  position: relative;
+  position: absolute;
+  float: left;
+  left: 45%;
+  top: 30%;
+  width: 33%;
 }
+
+
 h1 {
-  font-family:'roboto-bold.ttf', sans-serif;
-  font-weight: bold;
+  font-family: georgia;
+  font-weight: lighter;
+  font-size: 2vw;
 }
 
 p {
-  font-family: 'roboto-light.ttf', sans-serif;
+  font-family: "roboto-light.ttf", sans-serif;
   font-weight: lighter;
+  font-size: 1vw;
+  line-height: 1.6vw;
+}
+
+.nav-bar {
+  position: absolute;
+  float: left;
+  display: inline-block;
+  right: 10%;
+  z-index: 10;
+  top: 5%;
 }
 
 
-@keyframes hvr-fly-right-in {
 
-  25% {
-    transform: translate(10%, -10%);
-  }
-
-  50% {
-    transform: translate(20%, -20%);
-  }
-
-  75% {
-    transform: translate(40%, -40%);
-  }
-
-  100% {
-    transform: translate(60%, -60%);
-  }
+.nav-bar h2 {
+  margin-right: 4vw;
 }
 
-@keyframes hvr-fly-left-in {
-
-  25% {
-    transform: translate(-10%, 10%);
-  }
-
-  50% {
-    transform: translate(-20%, 20%);
-  }
-
-  75% {
-    transform: translate(-40%, 40%);
-  }
-
-  100% {
-    transform: translate(-60%, 60%);
-  }
-
+.nav-bar a:link {
+  text-decoration: none;
+  color: black;
 }
 
-/* @keyframes hvr-fly-left-out {
-  80% {
-    transform: translate(-40%, 40%);
-  }
-
-  60% {
-    transform: translate(-20%, 20%);
-  }
-
-  40% {
-    transform: translate(-10%, 10%);
-  }
-
-  0% {
-    transform: translate(0%,0%)
-  }
-} */
-
-.hvr-fly-right:hover .stack-image-right {
-  animation-name: hvr-fly-right-in;
-  animation-duration: 0.3s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+.nav-bar a:visited {
+  text-decoration: none;
+  color: black;
 }
 
-.hvr-fly-right .stack-image-right {
-  /* animation-direction: alternate-reverse; */
-  animation-fill-mode: backwards;
-}
-/* .hvr-fly-left .stack-image-left {
-  animation-name: hvr-fly-left-in;
-  animation-duration: 0.3s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-  animation-fill-mode: reverse;
-} */
-
-.hvr-fly-left:hover .stack-image-left {
-  animation-name: hvr-fly-left-in;
-  animation-duration: 0.3s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+h2 {
+  font-family: "roboto-bold.ttf", sans-serif;
+  font-weight: bold;
+  font-size: 1vw;
+  float: left;
 }
 
-.bio {
+.stack-image-right {
+  mix-blend-mode: overlay;
+  transition: transform 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.stack-image-left {
+  mix-blend-mode: overlay;
+  transition: transform 0.3s ease-in-out;
+  z-index: -1;
+}
+.grid-container {
+  top: 10%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  /* background-color: #2196F3; */
+  padding: 10px;
+}
+
+.grid-container > div {
   position: relative;
-  width: 50%;
+  top: 150%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
 
-.bio h1, p {
-  position: relative;
-  left: 20%;
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
